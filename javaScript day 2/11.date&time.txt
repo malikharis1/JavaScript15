@@ -1,0 +1,30 @@
+let val;
+
+const today = new Date(); //today's date
+
+//add custom date 
+let birthday = new Date('17-10-2003 10:25:22');
+//another way to add custom date 
+birthday = new Date('oct 17 2003');
+//another way to add custom date 
+birthday = new Date('17/10/2003');
+
+val = today.getMonth(); //starts from zero 
+val = today.getDate(); //date
+val = today.getDay();  //day in number (Example sunday = 1)
+val = today.getFullYear(); //year
+val = today.getHours(); //hour
+val = today.getMinutes(); //minutes
+val = today.getSeconds(); //Seconds
+val = today.getMilliseconds();  //Milliseconds
+val = today.getTime(); //timeStamp  (number of seconds have passed since 2003 1st jan)
+
+//add custom 
+birthday.setMonth(2); //March
+birthday.setDate(12); 
+birthday.setFullYear(1985);
+birthday.setHours(3);
+birthday.setMinutes(30);
+birthday.setSeconds(25);
+
+console.log(birthday);

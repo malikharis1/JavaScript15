@@ -1,0 +1,26 @@
+const person = {
+  firstName: 'haris',
+  lastName: 'Malik',
+  age: 29,
+  email: 'hi@gmail.com',
+  hobbies: ['coding', 'chess', 'travel'],
+  address: {
+    city: 'srinagar',
+    state: 'J&K'
+  },
+  getBirthYear: function(){
+    return 2023 - this.age;  //this is used as a person (obj) here
+  }
+}
+
+let val;
+
+val = person;
+// Get specific value  //outputs
+val = person.firstName;  //haris
+val = person.age; //20
+val = person.hobbies[1]; //coding
+val = person.address.state; //srinagar
+val = person.getBirthYear(); //2003
+
+console.log(val);
