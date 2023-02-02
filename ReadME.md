@@ -4,8 +4,8 @@ This repository is a comprehensive guide to mastering Modern JavaScript in just 
 
 ## Table of Contents 🤞
 
-1. Day 1: About, Console, Variable, DataTypes, TypeConversion, Math, StringMethod
-2. Day 2: Array methods, templates, Date & Time, object Methods, if else, Switches, Functions, General loops, Windows object
+1. Day 1: About, Console, Variable, DataTypes, TypeConversion, Math, StringMethods
+2. Day 2: ArrayMethods, templates, Date&Time, objectMethods, if else, Switches, Functions, GeneralLoops, windowObject
 
 ## Instructions 🎇
 
