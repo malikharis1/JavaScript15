@@ -1,5 +1,5 @@
-const firstName = 'William';
-const lastName = 'Johnson';
+const firstName = 'haris';
+const lastName = 'malik';
 const age = 36;
 const str = 'Hello there my name is Brad';
 const tags = 'web design,web development,programming';
@@ -53,9 +53,9 @@ val = str.split(' ');
 val = tags.split(',');
 
 // replace()
-val = str.replace('Brad', 'Jack');
+val = str.replace('haris', 'meezan');
 
 // includes()
-val = str.includes('foo');
+val = str.includes('basit');
 
 console.log(val);
