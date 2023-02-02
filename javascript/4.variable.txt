@@ -1,0 +1,28 @@
+// var
+var age = 12;
+age = 16;
+console.log(age); //output 16
+{
+  var username = "malik";
+  username = "malik_haris_1";
+  console.log(age); //16
+}
+console.log(username); // malik_haris_1
+
+// let
+
+let rollNO = 12;
+rollNO = 16;
+console.log(rollNO); //output 16
+
+{
+  let main = 12;
+  main = 18;
+  console.log(rollNO); //16
+}
+// console.log(main); // through an error
+
+// const
+//same as LET but can't be redeclared
+const constant = 12;
+console.log(constant);

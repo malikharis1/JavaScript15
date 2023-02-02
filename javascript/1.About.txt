@@ -1,0 +1,29 @@
+Basics & Fundamentals
+(NO jQuery! !
+DOM Manipulation & Ul Events
+Object Oriented Programming — ES5 Prototypes + ES6 Classes
+Async JS — Ajax, Fetch, Promises, Async/Await
+Error Handling, Regular Expressions, LocalStorage
+Programming Scope, Arrow Functions, Map, Set, Iterators
+JavaScript Patterns
+Around 10 Projects
+
+
+Included Projects
+
+
+Task List (DOM & LS)
+Loan calculator
+Number guessing game
+Book Manager (OOP intro)
+EasyHTTP library( Fetch API)
+GitHub Finder (GitHub API)
+
+Weather App (weatherunderground API)
+racalorie (Module Pattern)
+CRUD App With ES6 Modules (Webpack)
+
+
+Chuck Norris Joke Generator
+Profile Scroller (Iterators)
+tate Pattern Interface
