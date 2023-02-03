@@ -1,0 +1,30 @@
+
+// Get things from the element method 1
+
+// const variableName = document.getElementById('idname');
+
+// // Change styling
+// variableName.style.background = '#333';
+// variableName.style.color = '#fff';
+// variableName.style.padding = '5px';
+// // variableName.style.display = 'none';
+
+// // Change content
+// variableName.textContent = 'Task List';
+// variableName.innerText = 'My Tasks';
+// variableName.innerHTML = '<span style="color:red">Task List</span>';
+
+// document.querySelector() method 2
+
+document.querySelector('li').style.color = 'red';
+document.querySelector('ul li').style.color = 'blue';
+
+document.querySelector('li:last-child').style.color = 'red';
+document.querySelector('li:nth-child(3)').style.color = 'yellow';
+document.querySelector('li:nth-child(4)').textContent = 'Hello World';
+document.querySelector('li:nth-child(odd)').style.background = '#ccc';
+document.querySelector('li:nth-child(even)').style.background = '#f4f4f4';
+
+
+
+

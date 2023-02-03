@@ -1,0 +1,27 @@
+// document.getElementsByClassName method 1
+
+// const items = document.getElementsByClassName('collection-item');
+// console.log(items);
+
+// let lis = document.getElementsByTagName('li');
+// console.log(lis);
+
+// // Conver HTML Collection into array
+// lis = Array.from(lis);
+
+// lis.forEach(function(li){
+//   console.log(li.className);
+//   li.textContent = "Hello";
+// });
+
+// console.log(lis);
+
+// document.querySelectorAll method 2
+
+const items = document.querySelectorAll("collection-item");
+
+items.forEach(function (item) {
+  item.textContent = "Hello";
+});
+
+console.log(items);
