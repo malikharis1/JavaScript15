@@ -20,4 +20,4 @@ This guide is meant for people who already have a basic understanding of program
 
 ## About the Author ☔
 
-Hi! My name is Haris Malik and I am a Front-End Web Developer. I created this repository as a resource for others looking to improve their JavaScript skills. I hope that you find it helpful and informative. If you have any questions or suggestions, you can reach me at protonmail harismalik1@protonmail.com or on my website harismalik.netlify.app. Happy coding!
+Hi! My name is Haris Malik and I am a Front-End Web Developer. I created this repository as a resource for others looking to improve their JavaScript skills. I hope that you find it helpful and informative. If you have any questions or suggestions, you can reach me at protonmail harismalik1@protonmail.com or on my website https://harismalik.netlify.app. Happy coding!
