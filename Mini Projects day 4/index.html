@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>Task-List</title>
+  </head>
+  <body>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4 text-center">
+        <h5 class="text-white h4">Tasklist</h5>
+        <span class="text-muted fs-6">This is a simple web-based task list application built with HTML, CSS and JavaScript. The application allows the user to add and store tasks in the local storage of the user's browser. The tasks are displayed in a list with a delete icon next to each task. The user can delete a task by clicking the icon and the task will be removed from both the local storage and the list on the screen. The application also provides a button to clear all tasks from the local storage and the screen. This is a basic and efficient task management tool that can be easily accessed and used anywhere, without the need for an internet connection.</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid d-flex justify-content-end">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Hello, there</h1>
+      <form id="form">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Tasklist</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            A simple and user-friendly task list application
+          </div>
+        </div>
+
+        <button type="submit" class="mb-3 btn btn-primary">Add Task</button>
+      </form>
+      <div class="input-group">
+        <span class="input-group-text bg-light bg-gradient">Find task</span>
+        <input type="text" aria-label="First name" class="form-control" />
+      </div>
+      <ul class="list-group"></ul>
+    </div>
+    <div class="container mt-4">
+      <button type="clear tasks" class="btn btn-danger">Clear Tasks</button>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+
+    <style>
+      body {
+        background: #fffbf5;
+      }
+    </style>
+  </body>
+</html>
