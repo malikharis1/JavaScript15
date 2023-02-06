@@ -3,7 +3,7 @@ let form = document.getElementById("form");
 let btn = document.querySelector(".btn");
 let listGroup = document.querySelector(".list-group");
 let clearTasks = document.querySelector(".btn-danger");
-
+let filter = document.querySelector("#filter");
 // added a cache for task icons
 let icons;
 
@@ -79,3 +79,21 @@ clearTasks.addEventListener("click", (e) => {
     parent.remove();
   });
 });
+
+// filter task
+filter.addEventListener("keyup", filterTask);
+
+function filterTask(e) {
+  const text = e.target.value.toLowerCase();
+
+  document.querySelectorAll(".list-group-item").forEach((task) => {
+    const item = task.firstChild.textContent;
+    if (item.toLowerCase().indexOf(text) != -1) {
+      task.style.display = "block";
+    } else {
+      task.style.display = "none";
+    }
+  });
+
+  console.log(text);
+}
