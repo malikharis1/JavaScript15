@@ -3,6 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content='Math Helper by HM" is a website created by
+    Haris Malik a Front-end Web developer to help students perform basic
+    calculations such as finding the area of a circle, triangle, or rectangle.
+    In the future, the creator plans to update the site with new formulas and
+    welcomes suggestions from users. If you have a specific formula you would
+    like to see added, feel free to reach out to me through direct message
+    and it will be added as soon as possible '
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -10,13 +20,13 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-<link rel="icon" href="./calculator.png">
+    <link rel="icon" href="./calculator.png" />
     <title>Math helper</title>
   </head>
   <body>
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid mr-5">
-        <a class="navbar-brand  " href="#">
+        <a class="navbar-brand" href="https://harismalik.netlify.app/">
           <img
             src="./calculator.png"
             alt=""
@@ -29,8 +39,8 @@
       </div>
     </nav>
     <div class="alert alert-danger" role="alert">
-        Please write proper values
-      </div>
+      Please write proper values
+    </div>
     <div class="container">
       <form class="form">
         <div class="mb-3">
@@ -44,13 +54,13 @@
           <input
             class="form-control"
             id="radius"
-            aria-describedby="emailHelp"
+            
           />
         </div>
         <div class="mb-3">
           <h5>
             Area of
-            <small class="text-muted">rectangle</small>
+            <small class="text-muted">Rectangle</small>
           </h5>
           <label for="exampleInputEmail1" class="form-label"
             >Enter length</label
@@ -58,10 +68,10 @@
           <input
             class="form-control"
             id="length"
-            aria-describedby="emailHelp"
+            
           />
           <label for="exampleInputEmail1" class="form-label">Enter width</label>
-          <input class="form-control" id="width" aria-describedby="emailHelp" />
+          <input class="form-control" id="width"  />
         </div>
         <div class="mb-3">
           <h5>
@@ -74,13 +84,13 @@
           <input
             class="form-control"
             id="circumferenceradius"
-            aria-describedby="emailHelp"
+            
           />
         </div>
         <div class="mb-3">
           <h5>
             Area of
-            <small class="text-muted">triangle</small>
+            <small class="text-muted">Triangle</small>
           </h5>
           <label for="exampleInputEmail1" class="form-label"
             >Enter height</label
@@ -88,16 +98,16 @@
           <input
             class="form-control"
             id="height"
-            aria-describedby="emailHelp"
+            
           />
           <label for="exampleInputEmail1" class="form-label">Enter base</label>
-          <input class="form-control" id="base" aria-describedby="emailHelp" />
+          <input class="form-control" id="base"  />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Calculate</button>
       </form>
-      <div class="container  loader">
+      <div class="container loader">
         <div class="d-flex justify-content-center">
-            <img src="./Spinner-1s-200px.gif" alt="">
+          <img src="./Spinner-1s-200px.gif" alt="" />
         </div>
       </div>
       <table class="table">
@@ -113,13 +123,14 @@
       </table>
     </div>
     <div class="card text-center">
-     
       <div class="card-body">
         <h5 class="card-title">Made with ❤ by Haris Malik</h5>
-        <p class="card-text">If you found this app helpful, you can support me by following me on Instagram.</p>
-        <a href="https://www.instagram.com/malik_haris_1/" >@malik_haris_1</a>
+        <p class="card-text">
+          If you found this app helpful, you can support me by following me on
+          Instagram.
+        </p>
+        <a href="https://www.instagram.com/malik_haris_1/">@malik_haris_1</a>
       </div>
-   
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -131,10 +142,10 @@
       .container {
         overflow: hidden !important;
       }
-      .loader{
+      .loader {
         display: none;
       }
-      .alert{
+      .alert {
         display: none;
       }
     </style>
