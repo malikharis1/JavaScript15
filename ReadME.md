@@ -7,7 +7,7 @@ This repository is a comprehensive guide to mastering Modern JavaScript in just 
 1. Day 1: About, Console, Variable, DataTypes, TypeConversion, Math, StringMethods
 2. Day 2: ArrayMethods, templates, Date&Time, objectMethods, if else, Switches, Functions, GeneralLoops, windowObject
 3. Day 3: DOM, Single-Multi selector, traverse, (create,remove,replace)Elements, Event listener ,Event Bubbling & Delegation, Local & Session Storage
-4. Day 4: Mini Project Challenge (Task List, Loan Calculator, Number Guesser)
+4. Day 4: Mini Project Challenge (Task List, formula Calulations, Number Guesser)
 
 ## Instructions 🎇
 

@@ -5,8 +5,25 @@ let listGroup = document.querySelector(".list-group");
 let clearTasks = document.querySelector(".btn-danger");
 let filter = document.querySelector("#filter");
 // added a cache for task icons
-let icons;
+document.body.addEventListener("click", item);
+function item(e) {
+  let iconParent = e.target.parentElement.classList.contains("list-group-item");
+  if (iconParent) {
+    e.target.parentElement.remove();
+    removeItemFromLlocalStorage(e.target.parentElement);
+  }
+}
+// delete item from local Storage
+function removeItemFromLlocalStorage(taskItem) {
+  let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+  tasks.forEach((e, index) => {
+    if (taskItem.textContent === e) {
+      tasks.splice(index, 1);
+    }
+  });
 
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
 // fetch tasks from local storage on page load and display them
 window.onload = () => {
   let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
@@ -21,8 +38,6 @@ window.onload = () => {
   });
 
   // update the cache of task icons
-  icons = document.querySelectorAll("i");
-  handleTaskIcons();
 };
 
 // handle submit event of form
@@ -48,36 +63,17 @@ function getVal(e) {
     li.appendChild(i);
     listGroup.appendChild(li);
     input.value = "";
-
-    // update the cache of task icons
-    icons = document.querySelectorAll("i");
-    handleTaskIcons();
   } else {
     alert("Please enter a task");
   }
 }
 
-// function to handle task icons
-function handleTaskIcons() {
-  icons.forEach((icon, index) => {
-    icon.addEventListener("click", function () {
-      let parent = icon.parentElement;
-      parent.remove();
-      let tasks = JSON.parse(localStorage.getItem("tasks"));
-      tasks.splice(index, 1);
-      localStorage.setItem("tasks", JSON.stringify(tasks));
-      icons = document.querySelectorAll("i");
-    });
-  });
-}
-
 // clear all tasks from local storage and UI
-clearTasks.addEventListener("click", (e) => {
-  localStorage.removeItem("tasks");
-  icons.forEach((icon) => {
-    let parent = icon.parentElement;
-    parent.remove();
-  });
+clearTasks.addEventListener("click", () => {
+  while (listGroup.firstChild) {
+    listGroup.removeChild(listGroup.firstChild);
+  }
+  localStorage.clear();
 });
 
 // filter task
@@ -94,6 +90,4 @@ function filterTask(e) {
       task.style.display = "none";
     }
   });
-
-  console.log(text);
 }
