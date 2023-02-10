@@ -40,10 +40,10 @@ form.addEventListener("submit", (e) => {
     (radius.length <= 0) &
     (length.length <= 0) &
     (width.length <= 0) &
-    circumference.length
+    (circumference.length <= 0)
   ) {
     let alert = document.querySelector(".alert");
-    alert.style.display = "block" ;
+    alert.style.display = "block";
     setTimeout(() => {
       {
         alert.style.display = "none";
