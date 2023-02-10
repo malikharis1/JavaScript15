@@ -1,0 +1,17 @@
+[
+    {
+        "id" : 1,
+        "name": "Haris Malik",
+        "positon": "Developer"
+    },
+    {
+        "id" : 2,
+        "name": "Faizan Fayaz",
+        "positon": "DEO"
+    },
+    {
+        "id" : 3,
+        "name": "Musaib rehman",
+        "positon": "AST"
+    }
+]
